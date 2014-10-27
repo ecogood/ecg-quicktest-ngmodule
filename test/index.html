@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js htmlTag" ng-app="app" ng-controller="MainCtrl">
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="t.name">Schnelltest Gemeinwohl-Ökonomie</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap-progressbar/css/bootstrap-progressbar-3.2.0.min.css">
+  <link rel="stylesheet" href="../bower_components/toastr/toastr.min.css">
+  <link rel="stylesheet" href="../bower_components/ecg-assets-common/assets/css/ecg.css">
+  <link rel="stylesheet" href="../bower_components/ecg-assets-common/assets/css/general.css">
+  <link rel="stylesheet" href="../src/main.css">
+
+</head>
+<body>
+
+<!-- Add your site or application content here -->
+<div class="container">
+  <section ui-view=""></section>
+</div>
+
+<!-- External/AngularJS modules -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../bower_components/angular-touch/angular-touch.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/bootstrap-progressbar/bootstrap-progressbar.js"></script>
+<script src="../bower_components/toastr/toastr.min.js"></script>
+
+<!-- Shared modules -->
+<script src="../bower_components/blocks/src/blocks/modules/modules.module.js"></script>
+<script src="../bower_components/blocks/src/blocks/modules/modules.js"></script>
+
+<!-- quicktest ng module -->
+<script src="../src/app.module.js"></script>
+<script src="../src/config.route.js"></script>
+<script src="../src/services/generated/quicktest-texts.service.js"></script>
+<script src="../src/services/generated/quicktest-model.service.js"></script>
+<script src="../src/wrapper/wrapper.js"></script>
+<script src="../src/home/home.js"></script>
+<script src="../src/question/question.js"></script>
+<script src="../src/results/results.js"></script>
+<script src="../src/progressbar.directive.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    'use strict';
+
+    angular
+        .module('app', [
+          /* Angular dependencies */
+          'ngSanitize',
+          'ngTouch',
+          'ui.router',
+
+          /* shared dependencies */
+          'blocks.modules',
+
+          /* Feature dependencies */
+          'ecg-quicktest'
+        ])
+        .value('localeSupported', [
+          'en-US',
+          'de-DE'
+        ]);
+
+    angular.module('app')
+        .controller('MainCtrl', function($scope, ecgQuicktestTexts) {
+          $scope.t = ecgQuicktestTexts['de'];
+        });
+
+    /* app specific */
+    angular.module('blocks.modules')
+        .config(modulesConfig);
+
+    function modulesConfig(urlConfigProvider) {
+      urlConfigProvider.setTemplateRootUrl('ecg-quicktest', '../src/');
+    }
+
+  })();
+</script>
+
+</body>
+</html>

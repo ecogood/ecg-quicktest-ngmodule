@@ -1,0 +1,22 @@
+{
+  "name": "ecg-quicktest-ngmodule",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.0",
+    "angular-sanitize": "1.2.0",
+    "angular-cookies": "1.2.0",
+    "angular-touch": "1.2.0",
+    "angular-ui-router": "~0.2.11",
+    "jquery": "~2.1.1",
+    "bootstrap-progressbar": "~0.8.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.0",
+    "angular-scenario": "1.2.0",
+    "toastr": "~2.0.3",
+    "blocks": "git@github.com:ecogood/blocks-ngmodule.git",
+    "bootstrap": "~3.2.0",
+    "ecg-assets-common": "git@github.com:ecogood/ecg-assets-common.git"
+  },
+  "appPath": "app"
+}

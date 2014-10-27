@@ -1,0 +1,90 @@
+.progress-test {
+  height: 2px !important; }
+  .progress-test .progress-bar {
+    background-color: #b5eeee !important; }
+
+.readMore-container {
+  padding-bottom: 20px; }
+
+.question-data-form {
+  max-width: 300px;
+  font-size: 2rem; }
+  .question-data-form input, .question-data-form select {
+    font-size: 1.7rem; }
+
+.questionNav-container {
+  height: 6rem; }
+
+.questionIndicator {
+  text-align: center;
+  font-size: 2rem;
+  color: #999933; }
+
+.questionText {
+  padding: 20px 0;
+  min-height: 11em;
+  font-size: 1.7rem; }
+
+.result-company-name-container {
+  padding-bottom: 10px;
+  text-align: center; }
+  .result-company-name-container h2 {
+    margin-top: 5px;
+    color: #808080; }
+
+.progress-vertical-ecg {
+  float: right !important;
+  width: 50px !important;
+  height: 150px !important; }
+
+.progress-bar {
+  font-size: 16px !important; }
+
+.resultFeedbackText {
+  font-size: 1.7rem; }
+
+/* Custom page footer */
+.footer {
+  margin-top: 20rem;
+  color: #E0E0E0; }
+  .footer a {
+    color: #99CCCC; }
+  .footer a:hover {
+    color: #009999; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px; }
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0; }
+  .marketing p + h4 {
+    margin-top: 28px; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .container {
+    max-width: 730px; }
+  .header, .marketing, .footer {
+    padding-left: 0;
+    padding-right: 0; }
+  .jumbotron {
+    border-bottom: 0; } }
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .questionText {
+    min-height: 12em; } }
+
+@media (min-width: 480px) and (max-width: 992px) {
+  .questionText {
+    min-height: 11em; } }

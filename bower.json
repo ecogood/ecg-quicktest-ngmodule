@@ -14,9 +14,9 @@
     "angular-mocks": "1.2.0",
     "angular-scenario": "1.2.0",
     "toastr": "~2.0.3",
-    "blocks": "git@github.com:ecogood/blocks-ngmodule.git",
+    "blocks": "https://github.com/ecogood/blocks-ngmodule.git",
     "bootstrap": "~3.2.0",
-    "ecg-assets-common": "git@github.com:ecogood/ecg-assets-common.git"
+    "ecg-assets-common": "https://github.com/ecogood/ecg-assets-common.git"
   },
   "appPath": "app"
 }

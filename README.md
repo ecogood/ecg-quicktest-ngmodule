@@ -10,5 +10,5 @@ Angular module for the ECG Quicktest
 * CSS: Bootstrap
 
 
-[travis-image]: https://travis-ci.org/ecogood/ecg-quicktest-texts.svg?branch=master
-[travis-url]: https://travis-ci.org/ecogood/ecg-quicktest-texts
+[travis-image]: https://travis-ci.org/ecogood/ecg-quicktest-ngmodule.svg?branch=master
+[travis-url]: https://travis-ci.org/ecogood/ecg-quicktest-ngmodule

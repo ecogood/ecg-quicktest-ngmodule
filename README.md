@@ -7,6 +7,7 @@ Angular module for the ECG Quicktest
 
 * ``$scope.t = ecgQuicktestTexts['de'];`` - in a parent scope for translations.
 * ``urlConfigProvider.setTemplateRootUrl('ecg-quicktest', '../src/');`` - set the root url of the quicktest templates within your app.
+* ``bootstrap.progressbar`` [directive](https://github.com/nikolayhg/angular-bootstrap-progressbar-directive)
 * CSS: Bootstrap
 
 

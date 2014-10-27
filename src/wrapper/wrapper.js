@@ -9,7 +9,7 @@
     .controller('EcgQuicktestWrapperCtrl', EcgQuicktestWrapperCtrl);
 
   /* @ngInject */
-  function EcgQuicktestWrapperCtrl($scope, ecgQuicktestService) {
+  function EcgQuicktestWrapperCtrl($scope) {
     $scope.testProgress = 0;
   }
 

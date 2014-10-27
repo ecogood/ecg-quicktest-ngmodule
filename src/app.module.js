@@ -10,6 +10,8 @@
    * set $scope.t = ecgQuicktestTexts[langShort];
    *
    */
-  angular.module('ecg-quicktest', []);
+  angular.module('ecg-quicktest', [
+    'bootstrap'
+  ]);
 
 })();

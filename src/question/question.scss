@@ -1,0 +1,31 @@
+@import "../../bower_components/ecg-assets-common/assets/sass/ecg-variables";
+@import "../../bower_components/ecg-assets-common/assets/sass/variables-screen-sizes";
+@import "../../bower_components/ecg-assets-common/assets/sass/general-variables";
+
+.questionNav-container {
+  height: 6rem;
+}
+
+.questionIndicator {
+  text-align: center;
+  font-size: 2rem;
+  color: $color-ecg-olive-dark;
+}
+
+.questionText {
+  padding: 20px 0;
+  min-height: 11em;
+  font-size: $font-size-big;
+}
+
+@media (min-width: 0px) and (max-width: $screen-xs-min) {
+  .questionText {
+    min-height: 12em;
+  }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-md) {
+  .questionText {
+    min-height: 11em;
+  }
+}

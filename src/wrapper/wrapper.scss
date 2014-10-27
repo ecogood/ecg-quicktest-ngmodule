@@ -1,0 +1,11 @@
+@import "../../bower_components/ecg-assets-common/assets/sass/ecg-variables";
+@import "../../bower_components/ecg-assets-common/assets/sass/variables-screen-sizes";
+@import "../../bower_components/ecg-assets-common/assets/sass/general-variables";
+
+.progress-test {
+  height: 2px !important;
+
+  .progress-bar {
+    background-color: $color-ecg-turquoise-light !important;
+  }
+}

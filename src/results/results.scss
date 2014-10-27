@@ -1,0 +1,27 @@
+@import "../../bower_components/ecg-assets-common/assets/sass/ecg-variables";
+@import "../../bower_components/ecg-assets-common/assets/sass/variables-screen-sizes";
+@import "../../bower_components/ecg-assets-common/assets/sass/general-variables";
+
+.result-company-name-container {
+  padding-bottom: $distance-small;
+  text-align: center;
+
+  h2 {
+    margin-top: 5px;
+    color: $color-grey-light;
+  }
+}
+
+.progress-vertical-ecg {
+  float: right !important;
+  width: 50px !important;
+  height: 150px !important;
+}
+
+.progress-bar {
+  font-size: 16px !important;
+}
+
+.resultFeedbackText {
+  font-size: $font-size-big;
+}

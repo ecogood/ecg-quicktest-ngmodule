@@ -1,0 +1,17 @@
+@import "../../bower_components/ecg-assets-common/assets/sass/ecg-variables";
+@import "../../bower_components/ecg-assets-common/assets/sass/variables-screen-sizes";
+@import "../../bower_components/ecg-assets-common/assets/sass/general-variables";
+
+.readMore-container {
+  padding-bottom: 20px;
+}
+
+.question-data-form {
+  max-width: 300px;
+  font-size: $font-size-bigger;
+
+  input,
+  select {
+    font-size: $font-size-big;
+  }
+}

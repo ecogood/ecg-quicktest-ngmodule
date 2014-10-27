@@ -25,6 +25,14 @@
   min-height: 11em;
   font-size: 1.7rem; }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .questionText {
+    min-height: 12em; } }
+
+@media (min-width: 480px) and (max-width: 992px) {
+  .questionText {
+    min-height: 11em; } }
+
 .result-company-name-container {
   padding-bottom: 10px;
   text-align: center; }
@@ -42,49 +50,3 @@
 
 .resultFeedbackText {
   font-size: 1.7rem; }
-
-/* Custom page footer */
-.footer {
-  margin-top: 20rem;
-  color: #E0E0E0; }
-  .footer a {
-    color: #99CCCC; }
-  .footer a:hover {
-    color: #009999; }
-
-.container-narrow > hr {
-  margin: 30px 0; }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
-  .jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px; }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0; }
-  .marketing p + h4 {
-    margin-top: 28px; }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .container {
-    max-width: 730px; }
-  .header, .marketing, .footer {
-    padding-left: 0;
-    padding-right: 0; }
-  .jumbotron {
-    border-bottom: 0; } }
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .questionText {
-    min-height: 12em; } }
-
-@media (min-width: 480px) and (max-width: 992px) {
-  .questionText {
-    min-height: 11em; } }

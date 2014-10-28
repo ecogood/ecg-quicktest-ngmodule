@@ -10,7 +10,7 @@ Angular module for the ECG Quicktest
     * Include ``progressbar.directive.js`` to your html to load the module.
     * Install [bootstrap-progressbar](https://github.com/minddust/bootstrap-progressbar): e.g. ``bower install bootstrap-progressbar --save-dev``
     * Include ``bootstrap-progressbar.js`` to your html.
-    * **NOTE**: bootstrap-progressbar depends on jQuery!
+    * (If not already) Add jQuery because bootstrap-progressbar depends on it.
 * ``blocks`` [AngularJS module](https://github.com/ecogood/blocks-ngmodule.git) for configuring the (template) URLs:
     * (Optional) Include it in your ``bower.json``: ``"dependencies": { "blocks-ngmodule": "https://github.com/ecogood/blocks-ngmodule.git" }`` and install it.
     * Include all ``blocks/modules/*.js`` to your html to load the module.
@@ -19,7 +19,7 @@ Angular module for the ECG Quicktest
         * see the [blocks.modules.config.js](test/blocks.modules.config.js) file as an example (or copy it in your project).
 * Set the texts to use:
     * Inject in a desired controller the ``ecgQuicktestTexts`` service and assign to the ``t`` scope variable the texts in the desired language: ``$scope.t = ecgQuicktestTexts['de'];``.
-* Add [Bootstrap CSS](http://getbootstrap.com/)
+* (If not already) Add [Bootstrap CSS](http://getbootstrap.com/)
 * Include the commong ECG assets:
     * Install [ecg-assets-common](https://github.com/ecogood/ecg-assets-common.git): e.g. ``bower install --save https://github.com/ecogood/ecg-assets-common.git`` 
     * Include ``assets/css/*.css`` to your html. 
